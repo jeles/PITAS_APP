@@ -22,6 +22,36 @@ Despite innovations in automotive safety features and traffic control systems, a
 
 The ultimate input will combine this information as the following features:
 
+- Number of One-Ways: 'numones', integer
+- The mean speed of roads at the intersection: 'meanspeed', float
+- The maximum speed differential at the intersection: 'maxdiffspeed', float
+- The number of roads at the intersection: 'numroad', integer
+- The number of uniquely named roads at the intersection: 'uniroad', integer
+- If the intersection has stop signs: 'StopSign', Bool
+- The number of stop signs per road at the intersection: 'StopPerWay', float
+- If the intersection has a traffic light: 'TrafficLight', Bool 
+- If the intersection has a traffic light that has a period of Red/Yellow Flashing: 'TrafficFlash', Bool
+- The number of signs restricting turns: 'turnrestriction', integer
+- The number of signs restricting parking: 'noparking', integer
+- The number of signs alerting drivers to upcoming intersections: 'vissigns', integer
+- The number of signs for yielding: 'yielding', integer
+- The number of 311 complaints about the intersection since 2015: 'Complaints311', integer
+- Categorical encoding columns for the zoning of the intersection:
+       'Golden_Triangle_', 'Local_Neighborhood_Commercial_',
+       'Neighborhood_Industrial', 'Single-Unit_Attached_Residential',
+       'Urban_Industrial', 'Hillside__', 'Specially_Planned',
+       'Multi-Unit_Residential', 'Urban_Neighborhood_Commercial', 'Parks',
+       'Educational/Medical_Institution', 'Two-Unit_Residential',
+       'General_Industrial', 'Planned_Unit_Development',
+       'Single-Unit_Detached_Residential', 'General_Industrial__',
+       'Highway_Commercial', 'Three-Unit_Residential', 'Neighborhood_Office', Bool
+- The latitude of the interesection, 'latitude', float
+- The longitude of the intersection, 'longitude', float
+- An array of the number of accidents from 2004-2017, 'AccOverTime', Numpy Array
+- A list of unique road names at the intersection: 'STlist', list
+- A string containing all uniqe road names at the intersection: 'STstr', string
+- The mean number of accidents at the intersection (2004-2017): 'numacc', float
+
 <br />
 
 ### Model:
