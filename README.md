@@ -6,6 +6,7 @@
 ### Introduction:
 Despite innovations in automotive safety features and traffic control systems, automotive collisions remain one of the most costly and dangerous problems in the United States. Intersections are particularly dangerous and are where over 40% of traffic collisions occur. In my project, **Pittsburgh Intersection Threat Assessment System (PITAS)**, I propose using city data on traffic collisions, intersection safety features, and intersection geometry to predict the number of collisions that will occur at all intersections of a city, determine which features contribute the most to each intersection�s safety rating, and allow city planners to interact with the model. **PITAS could be productized as a municipal decision assistance tool or a tool to help insurance companies set premiums.**
 
+![png]({{ "/assets/rm_im1.png" }})
 <br />
 
 ### Inputs:
@@ -37,3 +38,6 @@ This values are generated for each intersection, which serves as the output of t
 ### Interactivity:
 
 **PITAS** is hosted at [pitas.herokuapp.com](pitas.herokuapp.com). At the site, you can toggle different features of a particular intersection to see how this could affect the Risk Level. 
+
+<br />
+![png]({{ "/assets/rm_im2.png" }})
