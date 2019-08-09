@@ -58,7 +58,9 @@ The ultimate input will combine this information as the following features:
 The inputs are fed into a Random Forest Multilabel Classification Model with 3 possible Risk Levels / labels:
 
 1: 0 Accidents Per Year
+<br />
 2: 0-2 Accidents Per Year
+<br />
 3: >2 Accidents Per Year
 
 This values are generated for each intersection, which serves as the output of the model.
