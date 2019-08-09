@@ -40,4 +40,4 @@ This values are generated for each intersection, which serves as the output of t
 **PITAS** is hosted at [pitas.herokuapp.com](pitas.herokuapp.com). At the site, you can toggle different features of a particular intersection to see how this could affect the Risk Level. 
 
 <br />
-![png2](assets/rm_im2.png)
+![png](assets/rm_im2.png)
