@@ -1,5 +1,5 @@
 # Pittsburgh Intersection Threat Assessment System (PITAS)
-## an automated inspection system 
+## An automated intersection inspection system 
 
 <br />
 
