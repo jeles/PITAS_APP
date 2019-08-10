@@ -6,7 +6,6 @@ import plotly.graph_objs as go
 from math import degrees
 
 import ast
-import pickle
 import numpy as np
 import pandas as pd
 import requests
