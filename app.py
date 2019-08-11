@@ -80,14 +80,14 @@ app.layout = html.Div([
                 value = 899
                 ),
                 ],style={'width': '33%', 'display': 'inline-block','padding-left': '30px'})
-            ], className='pretty_container eight columns',id='RoadSelect' 
+            ], className='pretty_container ten columns',id='RoadSelect' 
         ),
         html.Div([
             html.Div([html.H3(children='Satellite Imagery of Intersection:'),dcc.Graph(id='intmap')],
-            className='pretty_container four columns'),
+            className='pretty_container five columns'),
 
             html.Div([html.H3(children='Accidents over Time:'),dcc.Graph(id='x-time-series')],
-            className='pretty_container four columns')
+            className='pretty_container five columns')
         ],className='row flex-display'),
         
         html.Div([
@@ -124,8 +124,9 @@ app.layout = html.Div([
                     ],
                     value=['RT']
                 )
-            ],className='pretty_container four columns'),
-            html.Div([html.H4(children='Predicted Mean Annual Accidents:'),html.Img(id='image1')],className='pretty_container four columns')
+            ],className='pretty_container five columns'),
+            html.Div([html.H4(children='Predicted Mean Annual Accidents:'),html.Img(id='image1',style={'width': '100%'})],
+            className='pretty_container five columns')
 
         ],className='row flex-display')
 
@@ -139,6 +140,7 @@ app.layout = html.Div([
 def update_date_dropdown(name):
     return [{'label': i[0], 'value': i[1]} for i in intconn[name]]
 
+#### Here, you could 
 def create_time_series(aot):
     fig = go.Figure()
     fig.add_trace(
@@ -164,6 +166,7 @@ def create_time_series(aot):
     #fig['layout']['title']=go.layout.Title(text="Accidents over time",x=0)
     #fig['layout']['width']=800
     #fig['layout']['height']=475
+    fig['layout'].update(legend=dict(y=1.2, orientation="h"))
     fig['layout']['margin'] = {'l': 50, 'r': 50, 'b':50, 't': 50}
 
     return fig
@@ -231,6 +234,7 @@ def mapim(tind):
     #fig['layout']['title']=go.layout.Title(text="Imagery of Intersection")
     fig['layout']['margin'] = {'l': 50, 'r': 50, 'b':75, 't': 75}
     fig['layout']['yaxis']= {'scaleanchor': 'x', 'scaleratio': 1,'showgrid':False}
+    fig['layout'].update(legend=dict(y=1.2, orientation="h"))
     return fig
 
 @app.callback(
